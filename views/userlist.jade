@@ -2,6 +2,7 @@ extends layout
 
 block content
 
+<<<<<<< HEAD
     h1= tit
         
     ul
@@ -15,3 +16,17 @@ block content
                 
                 
                 //a(href="mailto:#{user.email}")= user.firstname
+=======
+    #home
+        a(href='/') Home 
+
+    h1= title
+        
+    ul
+        each user, i in userlist
+            li
+                p #{user.firstname} #{user.lastname}
+                p #{user.alias} 
+                a(href="mailto:#{user.email}")= user.email
+                
+>>>>>>> v1

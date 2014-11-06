@@ -2,6 +2,7 @@ extends layout
 
 block content
 
+<<<<<<< HEAD
     h1= title
     form#formAddUser(name="register",method="post",action="/register")
         input#inputFirstName(type="text", placeholder="First Name", name="firstname") 
@@ -13,3 +14,22 @@ block content
         input#inputUserEmail(type="text", placeholder="E-mail", name="email")
         | &nbsp &nbsp
         button#btnSubmit(type="submit") Submit
+=======
+    #home
+        a(href='/') Home 
+
+    h1= title
+    
+    form#formRegister(name='adduser',method='post',action='adduser')
+        input#inputFirstName(type="text", placeholder="First Name", name="firstname")
+        | &nbsp
+        input#inputLastEmail(type="text", placeholder="Last Name", name="lastname")
+        | &nbsp
+        input#inputAlias(type="text", placeholder="Alias", name="alias")
+        | &nbsp
+        input#inputEmail(type="text", placeholder="E-Mail", name="email")
+        | &nbsp
+        button#btnSubmit(type="submit") Submit
+    
+    
+>>>>>>> v1
