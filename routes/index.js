@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res) {
-<<<<<<< HEAD
+
     res.render('index', { title: 'Home' });
 });
 
@@ -49,7 +49,7 @@ router.post('/register', function(req, res){
             res.redirect('userlist');
         }
     });
-=======
+
   res.render('index', { title: 'Home' });
 });
 
@@ -101,7 +101,7 @@ router.post('/adduser', function(req, res) {
             res.redirect('/userlist');
         }
     });    
->>>>>>> v1
+
 });
 
 
