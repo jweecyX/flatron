@@ -6,8 +6,9 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongod = require('mongodb');
 var monk = require('monk');
+var ejs = require('ejs');
 
-var db = monk('localhost:27017/mysite');
+
 
 var mongo = require('mongodb');
 var monk = require('monk');
@@ -19,6 +20,8 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
+
+app.engine('html', require('ejs').renderFile);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

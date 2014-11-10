@@ -2,24 +2,27 @@ doctype html
 html
 head
     //
-      Meta setup - Required for apple device
+        Meta setup - Required for apple device        
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
     //
-      Favicon
+        Favicon
     link(rel='icon', type='image/png', href='project/img/welcome/favicon.png')
     //
-      Title
+        Title
     title Webplate
     //
-      Include fonts
+        Include fonts
     link(href='http://fonts.googleapis.com/css?family=Lato:300,400,700', rel='stylesheet', type='text/css')
     //
-      Include webplate
+        Include webplate
     script#webplate-stack(src='stack.js')
-  body.invert(style='display: none;', data-icon-font='icomoon', data-ui='stripe', data-project-css='welcome.css', data-project-js='min/welcome.min.js', data-formplate-colour='aqua')
+    
+    
+body.invert(style='display: none;', data-icon-font='icomoon', data-ui='stripe', data-project-css='welcome.css', data-project-js='min/welcome.min.js', data-formplate-colour='green')
     //
        Navigation 
+       
     nav.absolute
       .contain
         ul.navigation
@@ -29,41 +32,51 @@ head
               span.icon-angle-down
             ul
               li
-                a(href='#getting-started') Getting Started
+                a(href='#getting-started') Music
               li
-                a(href='#going-responsive') Going Responsive
+                a(href='#going-responsive') Woodwork
               li
-                a(href='#forms') Forms
+                a(href='#forms') Techlab
               li
-                a(href='#buttons') Buttons
+                a(href='#buttons') Art
+              li
+                a(href='#buttons') Food
+
           li
             a(href='#')
-              | UI KITS
+              | JOURNAL
               span.icon-angle-down
             ul
               li
                 a(href='project/ui/quill/example.html') Quill UI
               li
                 a(href='project/ui/stripe/example.html') Stripe UI
-          li
-            a(href='http://getwebplate.com/documentation') DOCUMENTATION
-        .logo-container
-          a.logo-line(href='#') WEBPLATE
+
+      .logo-container
+        a.logo-line(href='#') J w e e c y
     //
        Header 
     header.stripe.full
-      a.navigation-trigger.icon-menu(href='#')
-      .contain
-        .text-center-tight
-          .inner
-            h2 A Framework Like No Other
-            h6
-              | It's great that you decided to use or at least try Webplate. The next step is to get started quickly and begin building what can only be a cool project.
-            p
-              | Want Updates? Follow Us
-              a(href='https://twitter.com/webplatetweets', target='_blank') @webplatetweets
-        a.scroll-down.icon-angle-down(href='#')
-      .bg-image
+          a.navigation-trigger.icon-menu(href='#')
+          .contain
+            .text-center-tight
+              .inner
+                h2 J w e e c y
+                h6
+                  | Hello there 
+                  br
+                  | Nice to meet you 
+                  br
+                  | Scroll down to explore
+            //
+                p
+
+                  | You can follow me 
+                  a(href='https://twitter.com/webplatetweets', target='_blank') @webplatetweets
+            a.scroll-down.icon-angle-down(href='#')
+
+          .bg-image
+
     //
        Getting started 
     #getting-started.stripe
@@ -77,10 +90,8 @@ head
           | of
           b webplate-stack
           | is required.
-        pre.prettyprint.linenums.showcase-code.
-          \n<head>
-              <script id="webplate-stack" src="[webplate]/stack.js">
-          </head>
+  
+
                     
         p
           | In the above
@@ -91,9 +102,7 @@ head
           b project
           | specific JS and CSS. To load project files add a data attribute to your
           | like the example below.
-        pre.prettyprint.linenums.showcase-code.
-          \n<body style="display: none;" data-project-css="welcome.css" data-project-js="welcome.js">
-                    
+     
         p
           | The
           b style="display: none;"
@@ -123,12 +132,8 @@ head
         p  
         h4 Classed Implementation
         p HTML
-        pre.prettyprint.linenums.showcase-code.
-          \n<div class="class-example row">
-              <div class="span-12 span-large-2">Left</div>
-              <div class="span-6 span-large-8">Middle</div>
-              <div class="span-6 span-large-2">Right</div>
-          </div>
+
+
                     
         p
           | RESULT (Screen Width:
@@ -141,56 +146,12 @@ head
         p  
         h4 Mixin Implementation
         p HTML
-        pre.prettyprint.linenums.showcase-code.
-          \n<div class="atomic-example">
-              <div class="left-col">Left</div>
-              <div class="middle-col">Middle</div>
-              <div class="right-col">Right</div>
-          </div>
+
+
                     
         p SASS
-        pre.prettyprint.linenums.showcase-code.
-          \n.atomic-example {
-              @include row();
+
           
-              // Columns - mobile first
-              .left-col, .right-col, .middle-col {
-                  @include span(12);
-              }
-          
-              // Over 700px
-              @include respond-to(large) {
-                  .left-col {
-                      @include span-new(6);
-                  }
-                  .middle-col, .right-col {
-                      @include span-new(3);
-                  }
-              }
-          
-              // Over 800px
-              @include respond-to(50em) {
-                  .left-col {
-                      @include span-new(12);
-                  }
-                  .middle-col {
-                      @include span-new(9);
-                  }
-                  .right-col {
-                      @include span-new(3);
-                  }
-              }
-          
-              // Over 900px
-              @include respond-to(56.250em) {
-                  .left-col, .right-col {
-                      @include span-new(2);
-                  }
-                  .middle-col {
-                      @include span-new(8);
-                  }
-              }
-          }
                     
         p
           | RESULT (Screen Width:
@@ -213,58 +174,7 @@ head
         p
           | Getting truly universal forms and inputs can be tricky but Webplate has got you covered. Best of all, it looks and acts the same and is completely responsive across all devices, even touch screens.
         p HTML
-        pre.prettyprint.linenums.showcase-code.
-          \n<div class="formplate">
-              <label for="text-input">Text Input:</label>
-              <input type="text" id="text-input" name="text-input">
-          </div>
-          
-          // Textarea
-          <div class="formplate">
-              <textarea placeholder="Textarea"></textarea>
-          </div>
-          
-          // Checkboxes
-          <div class="formplate">
-              <input type="checkbox" name="checkbox-1" value="checkbox-1" id="checkbox-1">
-              <label for="checkbox-1">Checkbox 1</label>
-          </div>
-          <div class="formplate">
-              <input type="checkbox" name="checkbox-2" value="checkbox-2" id="checkbox-2">
-              <label for="checkbox-2">Checkbox 2</label>
-          </div>
-          <div class="formplate">
-              <input type="checkbox" name="checkbox-3" value="checkbox-3" id="checkbox-3">
-              <label for="checkbox-3">Checkbox 3</label>
-          </div>
-          
-          // Radio buttons
-          <div class="formplate">
-              <input type="radio" name="radio" value="radio-1" id="radio-1">
-              <label for="radio-1">Radio 1</label>
-          </div>
-          <div class="formplate">
-              <input type="radio" name="radio" value="radio-2" id="radio-2">
-              <label for="radio-2">Radio 2</label>
-          </div>
-          <div class="formplate">
-              <input type="radio" name="radio" value="radio-3" id="radio-3">
-              <label for="radio-3">Radio 3</label>
-          </div>
-          
-          // Drop-down
-          <div class="formplate">
-              <select>
-                  <option value="1">Select Option 1</option>
-                  <option value="2">Select Option 2</option>
-                  <option value="3">Select Option 3</option>
-              </select>
-          </div>
-          
-          // Toggler
-          <div class="formplate">
-              <input type="checkbox" class="toggler" name="toggler" value="toggler">
-          </div>
+       
                     
         p RESULT
         .col-double
@@ -320,22 +230,7 @@ head
           a(href='http://getwebplate.com/plugins/buttonplate') Buttonplate
           | . See a few example below.
         p HTML
-        pre.prettyprint.linenums.showcase-code.
-          \n<a href="#" class="button">Basic</a>
-          <a href="#" class="button blue small">Small Blue</a>
-          <a href="#" class="button green">Green</a>
-          <a href="#" class="button orange large">Orange Large</a>
-          <a href="#" class="button red pill extra-large">Red Pill Extra Large</a>
-          
-          // Button dropdown
-          <div class="button purple drop-down">
-              Purple Drop-down<div class="arrow"></div>
-              <ul>
-                  <li class="line-bottom"><a href="#">Link 1</a></li>
-                  <li><a href="#">Link 2</a></li>
-                  <li><a href="#">Link 3</a></li>
-              </ul>
-          </div>
+
                     
         p RESULT
         a.button(href='#') Basic
