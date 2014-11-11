@@ -8,11 +8,6 @@ var mongod = require('mongodb');
 var monk = require('monk');
 var ejs = require('ejs');
 
-
-
-var mongo = require('mongodb');
-var monk = require('monk');
-
 var db = monk('localhost:27017/jweecy');
 
 
@@ -28,7 +23,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
-//app.use(favicon(__dirname + '/public/favicon.png'));
+app.use(favicon(__dirname + '/public/images/favicon.png'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
