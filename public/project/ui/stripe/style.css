@@ -1885,11 +1885,11 @@ nav ul.navigation>li {
 
 nav ul.navigation>li>a {
     color: #fff;
-    font-size: 0.813em;
+    font-size: 1em;
 }
 
 nav ul.navigation>li>a span {
-    font-size: 1.125em;
+    font-size: 1em;
     margin-left: 12px;
 }
 
