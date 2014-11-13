@@ -594,7 +594,7 @@ html {
 }
 
 header.stripe {
-    padding: 0px 24px;
+    padding: 0px 25px;
 }
 
 @media only screen and (min-width: 28.125em) {
@@ -1743,6 +1743,7 @@ header.stripe.full .text,header.stripe.full .text-center,header.stripe.full .tex
 @media only screen and (min-width: 43.813em) {
     .modalplate form {
         border-bottom: 0px solid #000;
+        border-bottom: 0px solid #000;
     }
 }
 
@@ -1845,7 +1846,7 @@ nav .logo-container {
 }
 
 nav .logo-container .logo-line {
-    padding: 14px 24px;
+    padding: 8px 16px;
     color: #fff;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-weight: 300;
@@ -1875,17 +1876,22 @@ nav .logo-container a {
 nav ul.navigation {
     float: right;
     padding-top: 6px;
+    padding-right: 30px;
     list-style: none;
 }
 
 nav ul.navigation>li {
     float: left;
-    padding-left: 48px;
+    padding-left: 60px;
 }
 
 nav ul.navigation>li>a {
     color: #fff;
+<<<<<<< HEAD
     font-size: 1em;
+=======
+    font-size: 0.9em;
+>>>>>>> ce702a1b4b438782d3fb1597dc8af2a1367f35a3
 }
 
 nav ul.navigation>li>a span {
@@ -1953,7 +1959,7 @@ nav.absolute {
 
 @media only screen and (min-width: 43.813em) {
     nav.absolute {
-        padding-top: 50px;
+        padding-top: 40px;
     }
 }
 

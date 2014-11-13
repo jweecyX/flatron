@@ -25,46 +25,30 @@ body.invert(style='display: none;', data-icon-font='icomoon', data-ui='stripe', 
       .contain
         ul.navigation
           li
-            a(href='#')
+            a(href='#whatido')
               | What I do
-              span.icon-angle-down
-            ul
-              li
-                a(href='#music') Music
-              li
-                a(href='#woodwork') Woodwork
-              li
-                a(href='#techlab') Techlab
-              li
-                a(href='#art') Art
-              li
-                a(href='#food') Food
-
           li
             a(href='#journal')
               | Journal
-              span.icon-angle-down
-            ul
-              li
-                a(href='project/ui/quill/example.html') Quill UI
-              li
-                a(href='project/ui/stripe/example.html') Stripe UI
-           li 
-             a(href='#contact')
+
+          li 
+            a(href='#contact')
               | Contact
             
           
-      .logo-container
-        a.logo-line(href='#') J w e e c y
+        .logo-container
+            a.logo-line(href='#') J w e e c y
     //
        Header 
     header.stripe.full
-          a.navigation-trigger.icon-menu(href='#')
+          
           .contain
             .text-center-tight
               .inner
-                h2 J w e e c y
-                h6
+                h2 
+                  br
+                  |J w e e c y
+                h5
                   | Hello there 
                   br
                   br
@@ -83,47 +67,30 @@ body.invert(style='display: none;', data-icon-font='icomoon', data-ui='stripe', 
 
     //
        Getting started 
-    #getting-started.stripe
+    #whatido.stripe
       .contain
-        h3 Getting Started
-        p
-          | This is a simple process that requires you dropping a copy of the Webplate directory you just got into your project and including the
-          b stack.js
-          | file in your head tag. Below is a basic example and note that the
-          b id
-          | of
-          b webplate-stack
-          | is required.
-  
+        h3 What I do
+        h6 These are some of my interests. Do you share the same?
+        
+        a.image-hover(href='#music', data-wallpaper='project/img/welcome/circuit.jpg')
+          .text
+            p
+              span.title Music
+              | Bending strings, paradiddle diddle, churning squares & melody layering
+        
 
-                    
-        p
-          | In the above
-          b [webplate]
-          | is referencing the directory that houses the framework. By default it is often just called webplate and sits in your site root, but can be any name you wish. Just include the correct name in your stack call as above and all other paths will line up automatically.
-        p
-          | The stack will load all the neccessary files required as well as give you the option to load your own
-          b project
-          | specific JS and CSS. To load project files add a data attribute to your
-          | like the example below.
-     
-        p
-          | The
-          b style="display: none;"
-          | attribute is used to prevent style snapping so that the page will only show once the files have been loaded. It is not required but recommended as all files are loaded asynchronously. From here on out you will have access to all Webplate plugins as well as all other third party vendor libraries like,
-          a(href='http://jquery.com/') jQuery
-          | ,
-          a(href='http://modernizr.com/') Modernizr
-          | ,
-          a(href='http://typeplate.com/') Typeplate
-          | ,
-          a(href='http://julian.com/research/velocity/') Velocity.js
-          | ,
-          a(href='http://hammerjs.github.io/') Hammer.js
-          | and icon font support to name a few.
-        p
-          b Browser Support:
-          | IE9+, Chrome, Firefox, Safari, Opera
+
+
+
+
+
+
+
+
+
+
+
+
     //
        Layout 
     #going-responsive.stripe

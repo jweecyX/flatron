@@ -1,0 +1,472 @@
+!!! 5
+html
+head
+    //
+       Meta setup 
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui')
+    //
+       Title 
+    title Stripe UI Kit
+    //
+       Include Webplate 
+    script#webplate-stack(src='../../../stack.js')
+  body.invert(style='display: none;', data-icon-font='icomoon', data-ui='stripe')
+    //
+       Navigation 
+    a.navigation-trigger.icon-menu(href='#')
+    nav.absolute
+      .contain
+        ul.navigation
+          li
+            a(href='#')
+              | BASIC ELEMENTS
+              span.icon-angle-down
+            ul
+              li
+                a(href='#stripe-buttons') Buttons
+              li
+                a(href='#stripe-inputs') Inputs
+              li
+                a(href='#stripe-layouts') Layouts
+              li
+                a(href='#stripe-lists') Lists
+              li
+                a(href='#stripe-tables') Tables
+              li
+                a(href='#stripe-text') Text
+          li
+            a(href='#')
+              | COMPONENTS
+              span.icon-angle-down
+            ul
+              li
+                a(href='#stripe-code-reference') Code Reference
+              li
+                a(href='#stripe-download-stripe') Download Stripe
+              li
+                a(href='#stripe-image-hover') Image Hover
+              li
+                a(href='#stripe-login-block') Login Block
+              li
+                a(href='#stripe-modals') Modals
+              li
+                a(href='#stripe-prettify') Prettify
+              li
+                a(href='#stripe-pricing-table') Pricing Table
+              li
+                a(href='#stripe-showcase') Showcase
+          li
+            a(href='../../../') GO BACK
+        .logo-container
+          a.logo-line(href='#') STRIPE UI
+    //
+       Header 
+    header.stripe.full
+      .contain
+        .text-center-tight
+          .inner
+            h2 A Fully Integrated UI Kit
+            h6
+              | Stripe includes a variety of components from buttons, to inputs, to a full array of layouts designed for all basic websites
+        a.scroll-down.icon-angle-down(href='#')
+      .bg-image
+    //
+       Basic elements 
+    .stripe
+      .contain
+        h3 Basic Elements
+        #stripe-buttons
+          .btn-examples
+            button.btn-control Control Button
+            button.btn-download Download Button
+            button.btn-error Error Button
+            button.btn-info Info Button
+            button.btn-link Link Button
+            button.btn-primary Primary Button
+            button.btn-success Success Button
+            button.btn-warning Warning Button
+        #stripe-inputs.col-double
+          .left
+            .formplate
+              input(type='text', placeholder='Text Input', name='text-input')
+            .formplate
+              textarea(placeholder='Textarea')
+          .right
+            .col-double
+              .left
+                .formplate
+                  input#checkbox-1(type='checkbox', name='checkbox-1', value='checkbox-1')
+                  label(for='checkbox-1') Checkbox 1
+                .formplate
+                  input#checkbox-2(type='checkbox', name='checkbox-2', value='checkbox-2')
+                  label(for='checkbox-2') Checkbox 2
+                .formplate
+                  input#checkbox-3(type='checkbox', name='checkbox-3', value='checkbox-3')
+                  label(for='checkbox-3') Checkbox 3
+                br
+                .formplate
+                  select
+                    option(value='1') Select Option 1
+                    option(value='2') Select Option 2
+                    option(value='3') Select Option 3
+                br
+              .right
+                .formplate
+                  input#radio-1(type='radio', name='radio', value='radio-1')
+                  label(for='radio-1') Radio 1
+                .formplate
+                  input#radio-2(type='radio', name='radio', value='radio-2')
+                  label(for='radio-2') Radio 2
+                .formplate
+                  input#radio-3(type='radio', name='radio', value='radio-3')
+                  label(for='radio-3') Radio 3
+                br
+                .formplate
+                  input.toggler(type='checkbox', name='toggler', value='toggler')
+        #stripe-lists.col-triple
+          .left
+            ul.content
+              li List item 1
+              li List item 2
+              li List item 3
+          .middle
+            ol.content
+              li Ordered list item 1
+              li Ordered list item 2
+              li Ordered list item 3
+          .right
+            ul.flat
+              li Flat list item 1
+              li Flat list item 2
+              li Flat list item 3
+        #stripe-tables
+          table.first-blue
+            thead
+              tr
+                th First Blue
+                th Heading
+                th Heading
+              tr
+                td Table Cell
+                td Table Cell
+                td Table Cell
+              tr
+                td Table Cell
+                td Table Cell
+                td Table Cell
+        #stripe-text
+          h1 Heading 1
+          h2 Heading 2
+          h3 Heading 3
+          h4 Heading 4
+          h5 Heading 5
+          h6 Heading 6
+          p
+            | Lorem ipsum dolor sit amet, consectetur
+            b adipiscing
+            | elit. Donec quis mauris mi. Quisque
+            i sodales
+            | vel orci eu consequat. Nunc vestibulum aliquet ornare. Quisque adipiscing ipsum at urna aliquet euismod. Mauris aliquam, nisl consectetur aliquam dictum, massa.
+          p
+            | Nunc vestibulum aliquet ornare. Quisque adipiscing ipsum at urna aliquet euismod. Mauris aliquam, nisl consectetur aliquam dictum, massa. Mauris aliquam, nisl consectetur aliquam dictum, massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales vel orci eu consequat. Nunc vestibulum aliquet ornare.
+          blockquote
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales vel orci eu
+              b consequat
+              | . Nunc vestibulum aliquet ornare. Quisque adipiscing ipsum at urna aliquet euismod. Mauris aliquam, nisl consectetur aliquam dictum, massa. Quisque sodales vel orci eu consequat.
+            p
+              | Nunc vestibulum aliquet ornare. Quisque adipiscing ipsum at urna aliquet euismod. Mauris aliquam, nisl consectetur aliquam dictum, massa. Mauris aliquam, nisl consectetur aliquam dictum, massa.
+          p
+            a(href='#') Some Cool Link
+    //
+       Code reference 
+    #stripe-code-reference.stripe.code-reference
+      .contain
+        h3 Code Reference
+        h5
+          | $.code_reference(
+          i $x
+          | )
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales vel orci eu consequat.
+        h5
+          | $.another_reference(
+          i $x
+          | ,
+          i $y
+          | )
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales vel orci eu consequat.
+    //
+       Download stripe 
+    #stripe-download-stripe.stripe
+      .contain
+        .download-stripe
+          h3 Download Stripe
+          h6
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales vel orci eu consequat. Morbi lacinia, ligula sit amet commodo interdum, ligula tortor rhoncus elit, quis.
+          .left
+            a.btn-download(href='#download-stripe')
+              span.icon-cloud-download2
+              | Download Link
+          .right
+            a.btn-link(href='#download-stripe')
+              span.icon-github
+              | Get via Github
+    //
+       Image hover 
+    #stripe-image-hover.stripe
+      .contain
+        h3 Image Hover
+        a.image-hover(href='#image-hover', data-wallpaper='img/image-1.jpg')
+          .text
+            p
+              span.title Some Cool Heading
+              | Here is some small additional text
+        a.image-hover(href='#image-hover', data-wallpaper='img/image-2.jpg')
+          .text
+            p
+              span.title Some Cool Heading
+              | Here is some small additional text
+        a.image-hover(href='#image-hover', data-wallpaper='img/image-3.jpg')
+          .text
+            p
+              span.title Some Cool Heading
+              | Here is some small additional text
+    //
+       Login block 
+    #stripe-login-block.stripe.dark
+      .contain
+        .login-block
+          .content
+            h4 Sign In Now
+            p Provide a valid username and password below.
+            .formplate
+              input(type='text', name='username', placeholder='Username')
+            .formplate
+              input(type='password', name='password', placeholder='Password')
+          .options
+            button.btn-ok(type='submit') LOGIN
+            button.btn-cancel Forgot Password?
+    //
+       Modals 
+    #stripe-modals.stripe
+      .contain.col-double
+        h3 Modals
+        .left
+          p You can open a static modal with regular text or image content.
+          button.modal-trigger.btn-primary(data-modal-open='modal-static') Open Static Modal
+          .modalplate(data-modal-id='modal-static')
+            a.close.icon-cross(href='#')
+            .static
+              h5 Static Modal
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales vel orci eu consequat. Morbi lacinia, ligula sit amet commodo interdum, ligula tortor rhoncus elit, quis pretium orci nunc nec nisi. Nunc ultrices dui et erat elementum, vel ultricies erat pellentesque. Sed pretium libero ullamcorper turpis malesuada pretium. Fusce vitae ultrices massa. Morbi mollis erat at urna imperdiet, sit amet malesuada lacus pulvinar.
+        .right
+          p You can also create a form based modal.
+          button.modal-trigger.btn-primary(data-modal-open='modal-form') Open Form Modal
+          .modalplate(data-modal-id='modal-form')
+            a.close.icon-cross(href='#')
+            form(method='post', action='#')
+              h5 Form Modal
+              label(for='profile-pic') Profile Pic
+              .input-outer
+                input#profile-pic(type='file', name='profile-pic')
+              label(for='name') Name
+              .input-outer
+                input#name(type='text', name='name')
+              label(for='email') Email Address
+              .input-outer
+                input#email(type='text', name='email')
+              label(for='password') Your Password
+              .input-outer
+                input#password(type='password', name='password')
+              .options
+                button.btn-cancel.close Cancel
+                button.btn-ok(type='submit') Submit
+    //
+       Prettify 
+    #stripe-prettify.stripe
+      .contain.col-double
+        h3 Prettify
+        .left
+          p
+            | This is an external included library from
+            a(href='https://code.google.com/p/google-code-prettify/', target='_blank') https://code.google.com/p/google-code-prettify/
+            | . Included below or to the right is a basic example of the theme used by Stripe UI for code examples.
+        .right
+          pre.prettyprint.linenums.showcase-code.
+            \n<div class="example">
+                // Some basic code examples here
+            </div>
+                        
+    //
+       Pricing table 
+    #stripe-pricing-table.stripe
+      .contain
+        h3 Pricing Table
+        .pricing-table
+          .price-block
+            .top
+              p.title THE FREEBIE
+              p.price
+                span.currency $
+                | 0
+                span.per-month / mo
+              p.sub conditions apply
+            .bottom
+              .line
+                span.icon-check
+                | 1 User Account
+              .line
+                span.icon-check
+                | 500 MB Data
+              .line
+                span.icon-check
+                | Free for life
+            a.btn-signup(href='#') SIGN UP
+          .price-block
+            .top
+              p.title BASIC PLAN
+              p.price
+                span.currency $
+                | 9
+                span.per-month / mo
+              p.sub daily support
+            .bottom
+              .line
+                span.icon-check
+                | 10 User Accounts
+              .line
+                span.icon-check
+                | 2 GB Data
+              .line
+                span.icon-check
+                | 30 days free
+            a.btn-signup(href='#') SIGN UP
+          .price-block
+            .top
+              p.title BUSINESS PLAN
+              p.price
+                span.currency $
+                | 49
+                span.per-month / mo
+              p.sub daily support
+            .bottom
+              .line
+                span.icon-check
+                | 40 User Accounts
+              .line
+                span.icon-check
+                | 40 GB Data
+              .line
+                span.icon-check
+                | 30 days free
+            a.btn-signup(href='#') SIGN UP
+          .price-block
+            .top
+              p.title ENTERPRISE PLAN
+              p.price
+                span.currency $
+                | 149
+                span.per-month / mo
+              p.sub 24 hr support
+            .bottom
+              .line
+                span.icon-check
+                b UNLIMITED
+                | Users
+              .line
+                span.icon-check
+                | 150 GB Data
+              .line
+                span.icon-check
+                | 60 days free
+            a.btn-signup(href='#') SIGN UP
+    //
+       Showcase 
+    #stripe-showcase.stripe
+      .contain
+        h3 Showcase
+        .showcase-list
+          a.showcase(href='#')
+            .image(data-wallpaper='img/image-1.jpg')
+              .caption
+                h6
+                  | Showcase
+                  b Title
+                p This is a basic caption with extra text for descriptions
+            .text
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Donec quis mauris mi.
+          a.showcase(href='#')
+            .image(data-wallpaper='img/image-2.jpg')
+              .caption
+                h6
+                  | Showcase
+                  b Title
+                p This is a basic caption with extra text for descriptions
+            .text
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Donec quis mauris mi.
+          a.showcase(href='#')
+            .image(data-wallpaper='img/image-3.jpg')
+              .caption
+                h6
+                  | Showcase
+                  b Title
+                p This is a basic caption with extra text for descriptions
+            .text
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Donec quis mauris mi.
+          a.showcase(href='#')
+            .image(data-wallpaper='img/image-4.jpg')
+              .caption
+                h6
+                  | Showcase
+                  b Title
+                p This is a basic caption with extra text for descriptions
+            .text
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Donec quis mauris mi.
+    //
+       Layout 
+    #stripe-layouts.stripe
+      .contain
+        h3 Layouts
+        .col-double
+          h5 Double Column
+          .left
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales vel orci eu consequat. Morbi lacinia, ligula sit amet commodo interdum, ligula tortor rhoncus elit, quis pretium orci nunc nec nisi. Nunc ultrices.
+          .right
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales vel orci eu consequat. Morbi lacinia, ligula sit amet commodo interdum, ligula tortor rhoncus elit, quis pretium orci nunc nec nisi. Nunc ultrices.
+        .col-triple
+          h5 Triple Column
+          .left
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales vel orci eu consequat.
+          .middle
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales vel orci eu consequat.
+          .right
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales vel orci eu consequat.
+        .col-left-bar
+          h5 Left Bar Column
+          .left
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales.
+          .right
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales vel orci eu consequat. Morbi lacinia, ligula sit amet commodo interdum, ligula tortor rhoncus elit, quis pretium orci nunc nec nisi. Nunc ultrices dui et.
+        .col-right-bar
+          h5 Right Bar Column
+          .left
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales vel orci eu consequat. Morbi lacinia, ligula sit amet commodo interdum, ligula tortor rhoncus elit, quis pretium orci nunc nec nisi. Nunc ultrices dui et.
+          .right
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales.
