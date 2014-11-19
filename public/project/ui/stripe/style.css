@@ -1887,11 +1887,8 @@ nav ul.navigation>li {
 
 nav ul.navigation>li>a {
     color: #fff;
-<<<<<<< HEAD
-    font-size: 1em;
-=======
+    font-size: 100em;
     font-size: 0.9em;
->>>>>>> ce702a1b4b438782d3fb1597dc8af2a1367f35a3
 }
 
 nav ul.navigation>li>a span {
