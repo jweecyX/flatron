@@ -609,7 +609,7 @@ jQuery.stripe_menus = function() {
     });
 
     // Navigation sub menu
-    $('nav li.has-sub-menu').find('a:first').on('click', function($ev) {
+    $('nav li.has-sub-menu').find('a:first').on('hover', function($ev) {
         $ev.preventDefault();
 
         // Hide all the other menus

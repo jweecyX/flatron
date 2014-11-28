@@ -4,7 +4,7 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res) {
 
-    res.render('index', { title: 'Home' });
+    res.render('index.html', { title: 'Home' });
 });
 
 
@@ -24,6 +24,12 @@ router.get('/register', function(req, res) {
     res.render('register', {title: 'Register'})
 
 });
+
+router.get('/music', function(req, res) {
+    res.render('music', {title: 'Music'})
+
+});
+
 
 router.post('/register', function(req, res){
     var db = req.db;

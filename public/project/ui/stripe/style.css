@@ -2744,14 +2744,29 @@ nav.absolute {
     padding-top: 48px;
 }
 
-#stripe-image-hover .image-hover {
+#whatido .image-hover {
     float: left;
     position: relative;
     width: 100%;
 }
 
 @media only screen and (min-width: 43.813em) {
-    #stripe-image-hover .image-hover {
+    #whatido .image-hover {
+        width: 33.33333%;
+    }
+}
+#contact {
+		background-color: rgb(255, 164, 137);
+}
+
+#contact .image-hover {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+@media only screen and (min-width: 43.813em) {
+    #contact .image-hover {
         width: 33.33333%;
     }
 }
