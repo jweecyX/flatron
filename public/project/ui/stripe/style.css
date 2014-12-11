@@ -573,7 +573,7 @@ html {
 @media only screen and (min-width: 82.5em) {
     .stripe .contain {
         margin: 0px auto;
-        width: 75em;
+        width: 95em;
     }
 }
 
@@ -2751,7 +2751,7 @@ nav.absolute {
 
 @media only screen and (min-width: 43.813em) {
     #whatido .image-hover {
-        width: 33.33333%;
+        width: 20%;
     }
 }
 	
@@ -2765,12 +2765,14 @@ nav.absolute {
 #contact .image-hover {
     float: left;
     position: relative;
-    width: 100%;
 }
 
 @media only screen and (min-width: 43.813em) {
     #contact .image-hover {
-        width: 33.33333%;
+        width: 33.3333%;
+        align-items: center;
 				
     }
 }
+
+
