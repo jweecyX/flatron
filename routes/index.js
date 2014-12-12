@@ -33,7 +33,6 @@ router.get('/music', function(req, res) {
 
 router.post('/register', function(req, res){
     var db = req.db;
-    
     var fn = req.body.firstname;
     var ln = req.body.lastname;
     var al = req.body.alias;
@@ -75,11 +74,6 @@ router.get('/userlist', function(req, res) {
 });
 
 
-
-router.get('/register', function(req, res){
-    res.render('register', { title: 'Register' })   
-
-});
 
 
 

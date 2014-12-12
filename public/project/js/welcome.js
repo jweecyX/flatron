@@ -26,6 +26,8 @@ $(document).ready(function()
 			$('.screen-width').text($window_width);
 		});
 	}
+	
+
 
 
 // ------------------------------------------------ Execute
