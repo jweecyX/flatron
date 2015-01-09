@@ -26,7 +26,7 @@ router.get('/register', function(req, res) {
 });
 
 router.get('/music', function(req, res) {
-    res.render('music', {title: 'Music'})
+    res.render('music.html', {title: 'Music'})
 
 });
 

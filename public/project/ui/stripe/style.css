@@ -1132,7 +1132,7 @@ header.stripe .bg-image {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("img/background.jpg");
+    background-image: url("../../../images/lights.gif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1952,11 +1952,13 @@ nav ul.navigation>li>ul li:last-child a {
 
 nav.absolute {
     position: absolute;
+		background-color: rgba(0, 0, 0, 0.3);	
+		padding-bottom: 30px;
 }
 
 @media only screen and (min-width: 43.813em) {
     nav.absolute {
-        padding-top: 40px;
+        padding-top: 30px;
     }
 }
 
@@ -2754,12 +2756,10 @@ nav.absolute {
         width: 20%;
     }
 }
-	
-#whatido {
-		background-color: rgb(240, 240, 240)
-}
+
 #contact {
 		background-color: rgb(255, 164, 137);
+
 }
 
 #contact .image-hover {
@@ -2773,6 +2773,23 @@ nav.absolute {
         align-items: center;
 				
     }
+}
+
+#whatido {
+		background-color: rgb(240, 240, 240);
+
+}
+
+#journal {
+
+}
+
+#journalsub {
+		height: 60vh;
+}
+
+#musicshowcase {
+		height: 100vh;
 }
 
 

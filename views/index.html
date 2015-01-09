@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		
 		<!--Favicon-->
-		<link rel="icon" type="image/png" href="project/img/welcome/favicon.png" />
+		<link rel="icon" type="image/png" href="project/img/welcome/favicon.png">
 	
 		<!--Title-->
   	<title>Jweecy</title>
@@ -16,9 +16,10 @@
 		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 
     <!--Include webplate-->
-    <script id="webplate-stack" src="stack.js"></script>
-		
-
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    
+		<script id="smooth" src="script/smooth.js"></script>
+		<script id="webplate-stack" src="stack.js"></script>
 
 <!-- Body -->
 	
@@ -29,26 +30,31 @@
 	<nav class="absolute"><div class="contain">
 		<ul class="navigation">
 			<li>
-				<a href="#whatido">What I Do<span class="icon-angle-down"></span></a>
+				<a href="#whatido" class="scroll">What I Do<span class="icon-angle-down"></span></a>
 				<ul>
-					<li><a href="#music">Music</a></li>
-					<li><a href="#woodwork">Woodwork</a></li>
-					<li><a href="#techlab">Techlab</a></li>
-          <li><a href="#art">Art</a></li>
-					<li><a href="#food">Food</a></li>
+					<li><a href="/music" >Music</a></li>
+					<li><a href="/woodwork">Woodwork</a></li>
+					<li><a href="/techlab">Techlab</a></li>
+          <li><a href="/art">Art</a></li>
+					<li><a href="/food">Food</a></li>
 
 				</ul>
 			</li>
+			
 			<li>
-				<a href="#journal" id="j">Journal</span></a>
-
+				<a href="#journal" class="scroll">Journal</a>
 			</li>
-			<li><a href="#contact" id="c">Contact</a></li>
+			
+			<li>
+				<a href="#contact" class="scroll">Contact</a>
+			</li>
+			
 		</ul>
 
-		<div class="logo-container"><a href="#" class="logo-line">J w e e c y</a></div>
+		<div class="logo-container"><a href="/" class="logo-line">J w e e c y</a></div>
+		
 	</div></nav>
-
+	
 
 	<!-- Header -->
 	<header class="stripe full">
@@ -60,11 +66,13 @@
 			<div class="text-center-tight"><div class="inner">
 				
 				<h2>J w e e c y</h2>
+				
 				<h5> Hello there <br> <br> Nice to meet you <br> <br> Scroll down & explore </h5>
 
 			</div></div>
 
 			<a href="#" class="scroll-down icon-angle-down"></a>
+			
 
 		</div>
 
@@ -120,13 +128,13 @@
     <div class="stripe" id="journal"><div class="contain">
       <h3>Journal</h3>
       <h6>Some thoughts.</h6>
-      <div class="flickerplate bg-image" data-dot-navigation="true" data-block-text="false" data-auto-flick="false"  data-dot-alignment="center" data-theme="dark" data-auto-flick-delay=10 id="journal">	
+      <div class="flickerplate bg-image" data-dot-navigation="true" data-block-text="false" data-auto-flick="false"  data-dot-alignment="center" data-theme="dark" data-auto-flick-delay=10 id="journalsub">	
           <ul>
-
               <li data-background="images/sky.gif">
 
                   <div class="flick-title">Entry #110</div>
-                  <div class="flick-sub-text"> I have been obsessing about woodworking for the past few months. Everytime I close my eyes, I imagine how two pieces of wood come together. I see two pieces of wood in a vast empty space float towards each other in slow motion. As it comes together, I can see how the dove and the tail of a dovetail joint come together and fit into place. <br><br>Looks like I need to try making one of these joints that I have been dreaming about. See how it goes. Update you tomorrow.</div>
+                  <div class="flick-sub-text"> I have been obsessing about woodworking for the past few months. Everytime I close my eyes, I imagine how two pieces of wood come together. I see two pieces of wood in a vast empty space float towards each other in slow motion. As it comes together, I can see how the dove and the tail of a dovetail joint come together and fit into place. <br><br>Looks like I need to try making one of these joints that I have been dreaming about. See how it goes. Update you tomorrow.	</div>
+								
 
               </li>
               <li data-background="images/28H.jpg">
