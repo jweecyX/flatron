@@ -1952,7 +1952,7 @@ nav ul.navigation>li>ul li:last-child a {
 
 nav.absolute {
     position: absolute;
-		background-color: rgba(0, 0, 0, 0.3);	
+		background-color: rgba(0, 0, 0, 0.5);	
 		padding-bottom: 30px;
 }
 
