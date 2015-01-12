@@ -30,6 +30,10 @@ router.get('/music', function(req, res) {
 
 });
 
+router.get('/woodwork', function(req, res) {
+    res.render('woodwork.html', {title: 'Woodwork'})
+
+});
 
 router.post('/register', function(req, res){
     var db = req.db;

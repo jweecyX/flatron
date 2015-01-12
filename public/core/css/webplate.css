@@ -3071,7 +3071,7 @@ html.blueplate-html body {
     position: relative;
     width: 100%;
     height: 600px;
-    background-color: #e6e6e6;
+    background-color: #808080;
     overflow: hidden;
 }
 
@@ -3115,6 +3115,17 @@ html.blueplate-html body {
     font-size: 1.75rem;
 }
 
+.flickerplate ul.flicks>li .flick-title2 {
+    padding: 0px;
+		color: rgba(255,255,255,1);
+    text-align: left;
+    line-height: 56px;
+    line-height: 3.5rem;
+    font-size: 28px;
+    font-size: 1.75rem;
+/*	background-color: rgba(255,255,255,0.5);*/
+}
+
 @media only screen and (min-width: 43.813em) {
     .flickerplate ul.flicks>li .flick-title {
         line-height: 75px;
@@ -3133,6 +3144,19 @@ html.blueplate-html body {
     font-size: 16px;
     font-size: 1rem;
     font-weight: 300;
+}
+
+.flickerplate ul.flicks>li .flick-sub-text2 {
+    padding-bottom: 20px;
+		padding-top: 20px;
+    text-align: left;
+    color: rgba(255,255,255,1);
+    line-height: 42px;
+    line-height: 2rem;
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 300;
+/*		background-color: rgba(255,255,255,0.5);*/
 }
 
 .flickerplate ul.flicks>li .flick-title span.flick-block-text,.flickerplate ul.flicks>li .flick-sub-text span.flick-block-text {
@@ -3166,7 +3190,7 @@ html.blueplate-html body {
     opacity: 0;
     filter: alpha(opacity=0);
     text-align: center;
-    color: #fff;
+    color: #c9c9c9;
     font-size: 48px;
     font-size: 3rem;
     -webkit-transition: opacity 0.2s ease-out;

@@ -1888,7 +1888,7 @@ nav ul.navigation>li {
 nav ul.navigation>li>a {
     color: #fff;
     font-size: 100em;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 nav ul.navigation>li>a span {
@@ -2746,16 +2746,23 @@ nav.absolute {
     padding-top: 48px;
 }
 
+
+
 #whatido .image-hover {
     float: left;
     position: relative;
 }
 
-@media only screen and (min-width: 43.813em) {
-    #whatido .image-hover {
-        width: 20%;
-    }
+
+#whatido .image-hover {
+    width: 20%;
 }
+
+
+header.stripe {
+    padding: 0px 25px;
+}
+
 
 #contact {
 		background-color: rgb(255, 164, 137);
@@ -2767,12 +2774,9 @@ nav.absolute {
     position: relative;
 }
 
-@media only screen and (min-width: 43.813em) {
-    #contact .image-hover {
-        width: 33.3333%;
-        align-items: center;
-				
-    }
+#contact .image-hover {
+    width: 33.3333%;
+    align-items: center;
 }
 
 #whatido {
@@ -2785,11 +2789,60 @@ nav.absolute {
 }
 
 #journalsub {
-		height: 60vh;
+		
 }
 
 #musicshowcase {
 		height: 100vh;
 }
 
+
+#electronic {
+		
+}
+
+#mistersandman {
+		background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ), url("../../../images/c.jpg");
+}
+
+#dylan {
+		background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url("../../../images/dylan.jpg");
+}
+
+#calltoarms {
+		background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ), url("../../../images/circuit.jpg");
+}
+
+#raisethevoltage {
+		background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ), url("../../../images/highvoltage.jpg");
+}
+
+#helloworld {
+		background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ), url("../../../images/morning.jpg");
+}
+
+
+#video {
+		padding-left: 30px;
+}
 
