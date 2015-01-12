@@ -1,7 +1,16 @@
-jQuery(document).ready(function($) {
- 
-	$(".scroll").click(function(event){		
-		event.preventDefault();
-		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 1500);
-	});
+$(document).ready(function() {
+    // bind click event to all internal page anchors
+    $("a[href*=#]").bind("click", function(e) {
+        // prevent default action and bubbling
+        e.preventDefault();
+        e.stopPropagation();
+        // set target to anchor's "href" attribute
+        var target = $(this).attr("href");
+        // scroll to each target
+        $(target).velocity("scroll", {
+            duration: 500,
+            offset: -40,
+            easing: "ease-in-out"
+        });
+    });
 });
