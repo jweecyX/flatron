@@ -22,12 +22,26 @@ router.get('/userlist', function(req, res) {
 
 router.get('/register', function(req, res) {
     res.render('register', {title: 'Register'})
+});
 
+router.get('/techlab', function(req, res) {
+    res.render('techlab.html', {title: 'Techlab'})
 });
 
 router.get('/music', function(req, res) {
     res.render('music.html', {title: 'Music'})
+});
 
+router.get('/food', function(req, res) {
+    res.render('food.html', {title: 'Food'})
+});
+
+router.get('/art', function(req, res) {
+    res.render('art.html', {title: 'Art'})
+});
+
+router.get('/food', function(req, res) {
+    res.render('food.html', {title: 'Food'})
 });
 
 router.get('/woodwork', function(req, res) {
